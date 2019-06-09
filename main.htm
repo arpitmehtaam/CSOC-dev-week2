@@ -1,0 +1,229 @@
+<doctype! html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var myVar;
+
+function myFunction() {
+document.getElementById("loader").style.display = "block"; 
+ myVar = setTimeout(showPage, 3000);
+
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("ss").style.display = "block";
+}
+function contact() {
+document.getElementById("45").style.display = "block";}
+
+</script>
+<style>
+h1,h2 { text-align:center;
+color:white;
+font-style:italic;
+font-variant: small-caps;
+background color: tomato;}
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+header {height:600px;
+ 
+font-family:"Times New Roman", Times, serif;
+font-weight: bold;
+ background-image: linear-gradient(to right ,#00FFFF,deepskyblue,blue);
+  padding: 30px;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+
+
+}
+
+
+p {font-family:"Comic Sans MS", cursive, sans-serif;
+color:white;
+
+
+}
+.nav {
+height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 150px ;/* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+top:0;
+  right: 0;
+  
+  background-color:#00004d;
+border-left:4px inset black;
+  overflow-x: hidden;
+}
+
+/* Style the topnav links */
+.nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+
+  font-style:italic;
+
+}
+
+/* Change color on hover */
+.nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+.column.side {
+  width: 35%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+}
+
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 25%;
+
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+
+
+.special {  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 20px;
+}
+
+
+
+</style>
+</head>
+<body style='background-image: url("dis.jpg")'; onload="myFunction()"; >
+<header id='ss' style="display:none;" >Welcome Folks  !!<br><br><br><br><br><hr>
+<div><a href='#01' style="align:center;border-bottom:2px inset blue ">    Tripsters    </a>
+</div>
+</header>
+<div id='loader'></div>
+
+<div class='nav'>
+ <a href='#ss'>Home</a>
+<a href="#gal">Gallery</a>
+<a href='review.htm'>Review us</a>
+<a href="#4" style="float:right">Bottom</a>
+</div>
+
+<div class='column'>
+  <div class="column side"><h1>About Us</h1>
+<p>jekfefjbnefefjefekfeffknefjnekf</p>
+</div>
+
+</div>
+
+
+
+<div class="row">
+  
+  
+  <div class="column middle" >
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+
+<hr>
+<h1>Gallery</h1>
+<hr>
+<div overflow='scroll' id='gal'>
+<span class="gallery" >
+ 
+    <img src="1.jpg" alt="Cinque Terre" style='width:300px;height:300px;border:4px inset black;'>
+  
+  
+</span>
+
+<span class="gallery">
+  
+    <img src="2.jpg" alt="Forest" style='width:500px;height:300px;border:4px inset black;'>
+
+  
+</span>
+
+<span class="gallery" >
+  
+    <img src="3.jpg" alt="Northern Lights"  style='width:500px;height:300px;border:4px inset black;'>
+ 
+  
+</span>
+</div>
+
+
+<footer class='special' id='4'><button onclick='contact()'>Contact us</button>
+<br>
+<p id='45' style='display:none'>xyz@gmail.com</p>
+
+</footer>
+
+</body>
+</html>
